@@ -29,7 +29,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navigation navItems={navItems} />
         <Header />
-          <Main />
+        <Main />
       </ThemeProvider>
     </div>
   );

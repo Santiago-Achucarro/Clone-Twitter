@@ -1,0 +1,58 @@
+.IconMore {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.iconStats {
+  padding: 10px ;
+  border-radius: 45%;
+}
+.iconMsg {
+  padding: 10px ;
+  border-radius: 45%;
+}
+.iconRetwt {
+  padding: 10px ;
+  border-radius: 45%;
+}
+.iconLike {
+  padding: 10px ;
+  border-radius: 45%;
+}
+.iconShare {
+  padding: 10px ;
+  border-radius: 45%;
+}
+
+.IconMore:hover {
+  border-radius: 45%;
+  background-color: rgb(15, 31, 42);
+  color: rgb(29, 155, 240) !important;
+  width: 16px;
+}
+
+.iconStats:hover {
+  background-color: rgb(15, 31, 42);
+  color: rgb(29, 155, 240) !important;
+  transition: all linear 0.1s;
+}
+.iconMsg:hover {
+  background-color: rgb(15, 31, 42);
+  color: rgb(29, 155, 240) !important;
+  transition: all linear 0.1s;
+}
+.iconRetwt:hover {
+  background-color: rgb(15, 31, 42);
+  color: #00ba7c !important;
+  transition: all linear 0.1s;
+}
+.iconLike:hover {
+  background-color: #210914;
+  color: #570c2f !important;
+  transition: all linear 0.1s;
+}
+.iconShare:hover {
+  background-color: rgb(15, 31, 42);
+  color: rgb(29, 155, 240) !important;
+  transition: all linear 0.1s;
+}

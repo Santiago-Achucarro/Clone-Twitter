@@ -1,10 +1,6 @@
 import { Box, Button, ButtonGroup } from "@mui/material";
 import React from "react";
 import { BsTwitter } from "react-icons/bs";
-import { blue } from '@mui/material/colors';
-
-let btn = blue[200]
-
 
 const Navigation = ({ navItems }) => {
   return (
@@ -14,7 +10,10 @@ const Navigation = ({ navItems }) => {
         height: "70vh",
         backgroundColor: "black",
         ml: 10,
-        mt: 1.5,
+        pt: 1.5,
+        top: 0,
+        bottom: "10%",
+        position: "sticky",
       }}
       component="div"
     >
@@ -51,17 +50,17 @@ const Navigation = ({ navItems }) => {
         <Button
           variant="contained"
           sx={{
-            mt:2,
+            mt: 2,
             paddingX: 10,
             paddingY: 1.5,
             borderRadius: 10,
             textTransform: "none",
             fontWeight: "700",
             fontSize: 15,
-            backgroundColor:"#1d9bf0",
-            "&:hover":{
-            backgroundColor:"#1a8cd8",
-            }
+            backgroundColor: "#1d9bf0",
+            "&:hover": {
+              backgroundColor: "#1a8cd8",
+            },
           }}
         >
           Twittear

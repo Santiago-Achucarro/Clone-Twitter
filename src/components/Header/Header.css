@@ -1,0 +1,4 @@
+.headerToolbar{
+    background-color: rgb(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(10px) !important ;
+}

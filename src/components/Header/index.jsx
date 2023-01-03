@@ -9,13 +9,12 @@ import {
 } from "@mui/material";
 import { BsStars } from "react-icons/bs";
 import SearchIcon from "@mui/icons-material/Search";
-
-
+import "./Header.css"
 
 const Header = () => {
   return (
-    <AppBar sx={{ width: "76%" }}>
-      <Toolbar sx={{ backgroundColor: "black" }}>
+    <AppBar sx={{ width: "76%" }} className="headerToolbar">
+      <Toolbar >
         <Divider
           orientation="vertical"
           sx={{ backgroundColor: "#2F3336", mr: 3 }}
@@ -31,17 +30,16 @@ const Header = () => {
           <Box
             sx={{
               width: "5%",
-              display:"flex",
-              justifyContent:"center",
+              display: "flex",
+              justifyContent: "center",
               mr: 2,
-              borderRadius:20,
-              padding:1,
-              "&:hover":{
-                backgroundColor:"#191919",
-                cursor:"pointer"
-              }
+              borderRadius: 20,
+              padding: 1,
+              "&:hover": {
+                backgroundColor: "#191919",
+                cursor: "pointer",
+              },
             }}
-
           >
             <BsStars fontSize={22} />
           </Box>
@@ -60,10 +58,10 @@ const Header = () => {
             alignItems: "center",
             paddingY: "6px",
             paddingX: 3,
-            mb:1
+            mb: 1,
           }}
         >
-          <SearchIcon color="primary"/>
+          <SearchIcon color="primary" />
           <InputBase
             sx={{ color: "white", ml: 2, width: "270px" }}
             placeholder="Buscar en Twitter"
