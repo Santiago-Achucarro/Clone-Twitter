@@ -1,15 +1,10 @@
-.icon{
-    padding: 10px;
-    border-radius: 45%;
+.icon {
+  padding: 10px;
+  border-radius: 45%;
 }
 
-.icon:hover{
-    background-color: rgb(15, 31, 42);
-    color: rgb(29, 155, 240) !important;
-    transition: all  0.2s;
-}
-
-.textArea > div{
-    border:"none" !important
-
+.icon:hover {
+  background-color: rgb(15, 31, 42);
+  color: rgb(29, 155, 240) !important;
+  transition: all 0.2s;
 }

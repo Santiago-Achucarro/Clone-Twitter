@@ -1,8 +1,39 @@
 import { Box, Button, ButtonGroup } from "@mui/material";
 import React from "react";
 import { BsTwitter } from "react-icons/bs";
+import {
+  BiHash,
+  VscBell,
+  IoMdListBox,
+  IoMailOutline,
+  BsBookmark,
+  HiUser,
+  CgMoreO,
+  RiHome7Fill,
+} from "../../assets/icons";
 
 const Navigation = ({ navItems }) => {
+  const svgButton = (item) => {
+    switch (item) {
+      case "Inicio":
+        return <RiHome7Fill />;
+      case "Explorar":
+        return <BiHash />;
+      case "Notificaciones":
+        return <VscBell />;
+      case "Mensajes":
+        return <IoMailOutline />;
+      case "Guardados":
+        return <BsBookmark />;
+      case "Listas":
+        return <IoMdListBox />;
+      case "Perfil":
+        return <HiUser />;
+      default:
+        return <CgMoreO />;
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -24,7 +55,7 @@ const Navigation = ({ navItems }) => {
         {navItems.map((ele) => (
           <ButtonGroup key={ele.id}>
             <Button
-              startIcon={ele.svg}
+              startIcon={svgButton(ele.item)}
               sx={{
                 paddingX: 2,
                 fontSize: 22,

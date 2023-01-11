@@ -28,8 +28,9 @@ const Trend = () => {
         >
           Qué está pasando
         </Typography>
-        {trend.map((elem) => (
+        {trend.map((elem, index) => (
           <Box
+            key={index}
             sx={{
               width: "100",
               paddingX: 2,
@@ -37,7 +38,7 @@ const Trend = () => {
               backgroundColor: "#16181C",
               "&:hover": {
                 backgroundColor: "#1D1F23",
-                cursor:"pointer"
+                cursor: "pointer",
               },
             }}
           >
@@ -77,11 +78,13 @@ const Trend = () => {
             borderBottomRightRadius: 10,
             "&:hover": {
               backgroundColor: "#1D1F23",
-              cursor:"pointer"
+              cursor: "pointer",
             },
           }}
         >
-          <Link sx={{ ml: 1, textDecoration:"none", color:"#1C7DBF" }}>Mostrar más</Link>
+          <Link sx={{ ml: 1, textDecoration: "none", color: "#1C7DBF" }}>
+            Mostrar más
+          </Link>
         </Box>
       </Box>
     </Box>

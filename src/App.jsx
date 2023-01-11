@@ -1,37 +1,19 @@
-import { ThemeProvider } from "@emotion/react";
 import { Header, Main, Navigation } from "./components";
-import { theme } from "./customTheme/theme";
-import {
-  BiHash,
-  VscBell,
-  IoMdListBox,
-  IoMailOutline,
-  BsBookmark,
-  HiUser,
-  CgMoreO,
-  RiHome7Fill,
-} from "./assets/icons";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { navItems } from "./assets/navItems";
 import "./App.css";
 
 function App() {
-  const navItems = [
-    { id: 1, item: "Inicio", svg: <RiHome7Fill /> },
-    { id: 2, item: "Explorar", svg: <BiHash /> },
-    { id: 3, item: "Notificaciones", svg: <VscBell /> },
-    { id: 4, item: "Mensajes", svg: <IoMailOutline /> },
-    { id: 5, item: "Guardados", svg: <BsBookmark /> },
-    { id: 6, item: "Listas", svg: <IoMdListBox /> },
-    { id: 7, item: "Perfil", svg: <HiUser /> },
-    { id: 9, item: "Más opciones", svg: <CgMoreO /> },
-  ];
+  const queryClient = new QueryClient();
+
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
         <Navigation navItems={navItems} />
         <Header />
         <Main />
-      </ThemeProvider>
-    </div>
+      </div>
+    </QueryClientProvider>
   );
 }
 

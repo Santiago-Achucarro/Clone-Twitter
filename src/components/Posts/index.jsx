@@ -16,13 +16,14 @@ import {
 const Posts = () => {
   console.log(post);
 
-  return post.map((ele) => (
+  return post.map((ele, index) => (
     <Box
       sx={{
         borderTop: 1,
         borderBottom: 1,
         borderColor: "#2F3336",
       }}
+      key={index}
     >
       <Box sx={{ display: "flex", mt: 2 }}>
         <Box sx={{ display: "flex", width: "90%", ml: 3 }}>

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Input,
-  InputBase,
-  TextareaAutosize,
-  TextField,
-} from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 import {
   CgProfile,
   HiOutlineGif,
@@ -22,7 +15,7 @@ const NewPost = () => {
   return (
     <Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box sx={{ marginTop:1.5}}>
+        <Box sx={{ marginTop: 1.5 }}>
           <CgProfile fontSize={30} />
         </Box>
         <Box
@@ -43,7 +36,7 @@ const NewPost = () => {
         >
           <TextField
             multiline
-            maxRows={10}
+            maxRows={40}
             placeholder="¿Qué está pasando?"
             fullWidth
           />
